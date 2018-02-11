@@ -2,9 +2,14 @@
 var Letter = require("./Letter");
 
 
-function Word(word, func3, func4) {
-	this.word = word;;
+function Word(guess) {
+	this.word = [];
 	this.func3 = function(){
+		for (var i=0; i=selectedWord.length;i++){
+			correctLetter = selectedWord.charAt(i),
+			var word = new Letter();
+
+		}
 
 //returns a string representing te word.  This should call the function on each letter object (func1) that displays the character or an underscore and concatenate those together.//
 	};

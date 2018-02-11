@@ -20,3 +20,4 @@ for (i = 0; i < selectedWord.length;i++) {
 }
 
 console.log(unknownWord.join(" ")); 
+
