@@ -1,9 +1,10 @@
 
-var testletter = "k";
-var correctLetter = "x";
+// var testletter = "k";
+// var correctLetter = "k";
 
 
 function Letter(guess) {
+	this.unknownLetter = " _ ",
 	this.guess = guess;
 	this.present = false;
 	console.log("Guess: " + guess);
@@ -13,22 +14,24 @@ function Letter(guess) {
 		this.present = true;
 	};
 	//returns underlying character if the letter has been guessed or underscore if it has not been guessed//
-	this.func1 = function(){
+	this.func1 = function(guess){
 			if(this.guess === correctLetter) {
-				unknownLetter = this.guess;
+				this.unknownLetter = this.guess;
 				this.func2();
-			}else{
-				unknownLetter = "_ ";
-			};
-
-			console.log("Unknown Letter: " + unknownLetter);
+			}; 
+			console.log("Unknown Letter: " + this.unknownLetter);
 			console.log("Present: " + this.present);
 	};
 
 	this.func1();
 };
 
-  var output = new Letter(testletter);
+
+
+  // var output = new Letter(testletter);
+  // console.log("____________________");
+  // console.log(output);
+  // console.log(output.unknownLetter);
 
 
 module.exports = Letter;
