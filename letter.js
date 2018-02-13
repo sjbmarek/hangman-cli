@@ -34,7 +34,31 @@ function Letter(guess) {
   // console.log("____________________");
   // console.log(output);
   // console.log(output.unknownLetter);
+//___________________________________________________
+// 2nd try
 
+var correctLetter = "k";
+
+
+// function Letter(guess) {
+// 	this.unknownLetter = " _ ",
+// 	this.guess = guess;
+// 	this.isPresent = false;
+// 	console.log("Guess: " + guess);
+// 	console.log("Correct Letter: " + correctLetter);
+// 	//returns underlying character if the letter has been guessed or underscore if it has not been guessed//
+// 	this.addLetter = function(guess){
+// 			if(this.guess === correctLetter) {
+// 				this.unknownLetter = this.guess;
+// 				this.isPresent = true;
+// 			}; 
+// 			console.log("Unknown Letter: " + this.unknownLetter);
+// 			console.log("Match: " + this.isPresent);
+// 	};
+// };
+
+// var output = new Letter("s");
+// console.log(output);
 
 module.exports = Letter;
 
